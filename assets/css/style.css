@@ -1,0 +1,16 @@
+.addEmployeeForm {
+  padding: 20px;
+}
+
+.jumbotron {
+  background-color: black;
+}
+
+h1, p {
+  color: white;
+}
+
+.card-header {
+  background-color: rgb(66, 134, 244);
+  opacity: .9;
+}

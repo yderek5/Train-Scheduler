@@ -58,15 +58,15 @@ var showTrains = function(trains) {
     var frequency = trains[i].frequency;
 
     var newRow = $("<tr>");
-    // var newName = $("<td>").text(name);
-    // var newDestination = $("<td>").text(destination);
-    // var newTime = $("<td>").text(time);
-    // var newFrequency = $("<td>").text(frequency);
+    var newName = $("<td>").text(name);
+    var newDestination = $("<td>").text(destination);
+    var newTime = $("<td>").text(time);
+    var newFrequency = $("<td>").text(frequency);
 
-    newRow.append(name);
-    newRow.append(destination);
-    newRow.append(time);
-    newRow.append(frequency);
+    newRow.append(newName);
+    newRow.append(newDestination);
+    newRow.append(newTime);
+    newRow.append(newFrequency);
 
     $("tbody").append(newRow);
   }
