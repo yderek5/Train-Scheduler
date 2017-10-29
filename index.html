@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Train Scheduler</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Train Data Management</h1>
+      <p>A Comprehensive Directory of Current Trains Running</p>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Results Panel -->
+        <div class="panel panel-default">
+          <div class="div-heading">
+            <h3 class="panel-title">Current Trains</h3>
+          </div>
+          <div class="panel-body" id="wellSection">
+            <table class="table" id="trainList">
+              <thead>
+                <tr>
+                  <th>Train Name</th>
+                  <th>Destination</th>
+                  <th>Train Time</th>
+                  <th>Frequency</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td> <!-- Train Name Here -->
+                  <td></td> <!-- Train Destination Here -->
+                  <td></td> <!-- Train Time Here -->
+                  <td></td> <!-- Train Frequency Here -->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- entery Panel -->
+        <div class="panel panel-default">
+          <div class="div-heading">
+            <h3 class="panel-title">Add Trains</h3>
+          </div>
+          <div class="panel-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="search">Train Name:</label>
+                <input type="text" class="form-control" id="trainName">
+              </div>
+
+              <div class="form-group">
+                <label for="sell">Destionation:</label>
+                <input type="text" class="form-control" id="trainDestination">
+              </div>
+
+
+              <div class="form-group">
+                <label for="startYear">Train Time (00:00) - Military Time</label>
+                <input type="text" class="form-control" id="trainTime">
+              </div>
+              <div class="form-group">
+                <label for="endYear">Train Frequency</label>
+                <input type="text" class="form-control" id="frequency">
+              </div>
+              <button id="enterBtn" type="submit" class="btn btn-default">Enter</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of container -->
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js">
+</script>
+
+</html>
