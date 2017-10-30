@@ -32,11 +32,13 @@ $(document).ready(function() {
 
     console.log(name, destination, time, frequency);
 
+
     addTrain(name, destination, time, frequency);
-    $("#trainName").clear();
-    $("#trainDestination").clear();
-    $("#trainTime").clear();
-    $("#frequency").clear();
+
+    $("#trainName").val('');
+    $("#trainDestination").val('');
+    $("#trainTime").val('');
+    $("#frequency").val('');
   });
 });
 
@@ -51,10 +53,10 @@ var addTrain = function(name, destination, time, frequency) {
 
 var showTrains = function(trains) {
   $("tbody").empty();
-  for (var i = 0; i < trains.length(); i++) {
+  for (var i = 0; i < allTrains.length; i++) {
     var name = trains[i].name;
     var destination = trains[i].destination;
-    var time = train[i].time;
+    var time = trains[i].time;
     var frequency = trains[i].frequency;
 
     var newRow = $("<tr>");
