@@ -6,8 +6,13 @@
   background-color: black;
 }
 
-h1, p {
-  color: white;
+body {
+  background-color:grey;
+  color:black;
+}
+
+.white-text {
+  color:white;
 }
 
 .card-header {
